@@ -1,0 +1,160 @@
+/* Global */
+/* Cross browser: thuat ngu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind', sans-serif;
+}
+
+/* Header */
+header {
+    z-index: 1;
+    position: absolute;
+    width: 100%;
+}
+
+.navbar .navbar-brand {
+    font-size: 36px;
+}
+
+.navbar .navbar-brand i {
+    color: #35a22c;
+}
+
+
+#navbarPort .nav-item .nav-link {
+    color: white;
+    transition: all 0.5s;
+}
+
+#navbarPort .nav-item:hover .nav-link {
+    color: #35a22c;
+
+}
+
+#navbarPort .nav-item .nav-link::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: #35a22c;
+    display: block;
+}
+
+#navbarPort .nav-item:hover .nav-link::after {
+    width: 100%;
+}
+
+/* Carousel */
+.carouselPort .carousel-item {
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+.carouselPort .carousel-item:nth-child(1) {
+    background-image: url(../image/finland.jpg);
+}
+
+.carouselPort .carousel-item:nth-child(2) {
+    background-image: url(../image/mountains.jpg);
+}
+
+.carouselPort .carousel-item:nth-child(3) {
+    background-image: url(../image/mountains-1.jpg);
+}
+
+.carousel-caption .img_thumb img {
+    border-radius: 50%;
+    width: 15%;
+}
+
+.carouselPort .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carouselPort .carousel-caption h3 {
+    font-size: 56px;
+}
+
+.carouselPort .carousel-indicators li {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+}
+
+.carouselPort .carousel-indicators .active {
+    background-color: #35a22c;
+}
+
+.carouselPort .carousel-item::after {
+    content: "";
+    background-color: rgba(128, 128, 128, 0.4);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+/* About */
+.about__content .nav-link {
+    background-color: white;
+    border: 1px solid black;
+    color: black;
+    margin: 0 10px;
+}
+
+.about__content .nav-link.active {
+    background-color: #35a22c;
+    border-color: #35a22c;
+}
+
+.about__content .card {
+    border-radius: 1rem;
+    overflow: hidden;
+    margin-bottom: 30px;
+    border: none;
+    box-shadow: 0 0 0.4rem rgba(128, 128, 128, 0.4);
+    cursor: pointer;
+
+}
+
+.about__content .card .card-body {
+    text-align: center;
+    border: 1px solid transparent;
+    border-radius: 0 0 1rem 1rem;
+    transition: all 0.5s;
+}
+
+.about__content .card:hover .card-body {
+    border: 1px solid #35a22c;
+    border-top-color: transparent;
+}
+
+.about__content .card:hover h4 {
+    color: #35a22c;
+}
+
+.about__content .card .card-body h4 {
+    font-size: 1, 2rem;
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 575px) {
+    .about__content .card-body .card-title {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .about__content .nav-link {
+        margin: 0 5px;
+    }
+}
